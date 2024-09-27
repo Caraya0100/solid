@@ -1,7 +1,8 @@
-import orderFetcher from '../fetcher/order-fetcher';
-import { EcommerceOrder } from '@order-injector/interfaces/ecommerce-order';
-import injectOrder from '@order-injector/services/inject-order';
-import { FastifyReply, FastifyRequest } from 'fastify';
+import { FastifyReply, FastifyRequest } from 'fastify'
+
+import { EcommerceOrder } from '@/order/interfaces/order'
+import injectOrder from '@/order/services/inject-order'
+import orderFetcher from '../fetcher/order-fetcher'
 
 export async function createOrder(
   request: FastifyRequest<{
@@ -11,7 +12,6 @@ export async function createOrder(
 ) {
   try {
     await injectOrder(request.body, orderFetcher)
-
     return reply.code(200).send();
   } catch (err) {
     return reply.code(400).send({ error: (err as Error).message});

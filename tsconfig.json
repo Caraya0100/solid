@@ -15,12 +15,7 @@
     "forceConsistentCasingInFileNames": true,
     "moduleResolution": "node16",
     "paths": {
-      "@validator/*": ["src/validator/*"],
-      "@price/*": ["src/price/*"],
-      "@product/*": ["src/product/*"],
-      "@dispatch/*": ["src/dispatch/*"],
-      "@order-injector/*": ["src/order-injector/*"],
-      "@api/*": ["src/api/*"]
+      "@/*": ["src/*"],
     }
   },
   "exclude": ["node_modules"]

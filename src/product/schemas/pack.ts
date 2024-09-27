@@ -1,7 +1,13 @@
-import Joi from 'joi';
+import Joi from 'joi'
 
-export const packDetailSchema = Joi.object({
+export const ecommercePackSchema = Joi.object({
+  id: Joi.string().required(),
+  name: Joi.string().required(),
+  price: Joi.number().min(0).required(),
   quantity: Joi.number().min(0).required(),
-  numberOfItems: Joi.number().min(0).required(),
-  externalId: Joi.string().required(),
-});
+  total: Joi.number().min(0).required(),
+  properties: {
+    externalId: Joi.string().required(),
+    packNumberOfItems: Joi.number().min(0).required(),
+  }
+})

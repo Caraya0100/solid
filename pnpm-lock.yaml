@@ -12,7 +12,7 @@ dependencies:
     specifier: ^6.0.0
     version: 6.0.0
   fastify:
-    specifier: ^5.0.0-alpha.4
+    specifier: ^5.0.0
     version: 5.0.0
   fastify-cli:
     specifier: ^7.0.0
@@ -31,6 +31,9 @@ devDependencies:
   tsc-alias:
     specifier: ^1.8.10
     version: 1.8.10
+  typescript:
+    specifier: ^5.6.2
+    version: 5.6.2
 
 packages:
 
@@ -1018,6 +1021,12 @@ packages:
       media-typer: 0.3.0
       mime-types: 2.1.35
     dev: false
+
+  /typescript@5.6.2:
+    resolution: {integrity: sha512-NW8ByodCSNCwZeghjN3o+JX5OFH0Ojg6sadjEKY4huZ52TqbJTJnDo5+Tw98lSy63NZvi4n+ez5m2u5d4PkZyw==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+    dev: true
 
   /undici-types@6.19.8:
     resolution: {integrity: sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw==}
