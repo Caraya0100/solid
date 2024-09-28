@@ -1,7 +1,7 @@
 import { FastifyReply, FastifyRequest } from 'fastify'
 
 import { EcommerceOrder } from '@/order/interfaces/order'
-import injectOrder from '@/order/services/inject-order'
+import injectOrder from '@/order-injector/services/inject-order'
 import orderFetcher from '../fetcher/order-fetcher'
 
 export async function createOrder(

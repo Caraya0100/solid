@@ -1,4 +1,4 @@
-import { ErpOrderFetcher } from "@/order/interfaces/fetcher"
+import { ErpOrderFetcher } from "@/order-injector/interfaces/fetcher"
 import { ErpOrder } from "@/order/interfaces/order"
 
 const orderFetcher: ErpOrderFetcher = async (order: ErpOrder) => {
