@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "lib": ["es2023"],
+    "module": "node16",
+    "target": "es2022",
+    "outDir": "./dist",
+    "strict": true,
+    "baseUrl": "./",
+    "esModuleInterop": true,
+    "strictNullChecks": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "noImplicitAny": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node16",
+    "paths": {
+      "@/*": ["src/*"],
+    }
+  },
+  "exclude": ["node_modules"]
+}
